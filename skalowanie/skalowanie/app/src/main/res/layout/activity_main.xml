@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- ImageView do wyświetlania obrazu -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name" />
+
+    <!-- Przyciski do wyboru obrazu -->
+    <Button
+        android:id="@+id/buttonLoadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wybierz zdjęcie" />
+
+    <Button
+        android:id="@+id/buttonScaleImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skaluj zdjęcie" />
+</LinearLayout>

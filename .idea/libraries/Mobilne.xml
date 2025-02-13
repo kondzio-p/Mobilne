@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Mobilne">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/KontoBankoweDokumentacja.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Kalkulator.zip!/" />
+      <root url="jar://$PROJECT_DIR$/app.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
