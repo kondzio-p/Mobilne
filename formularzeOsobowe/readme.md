@@ -1,0 +1,35 @@
+# Witaj w aplikacji Formularze Osobowe!
+Aplikacja formularze będzie **Symulatorem prezesa®**.
+# Plan
+- Aplikacja mobilna w Android Studio.
+- Ekran główny:
+    - Header: Symulator Prezesa
+    - Przyciski poziomo:
+        - Przycisk "Interfejs pracownika"
+        - Przycisk "Interfejs prezesa"
+    - Na dole:
+        - Menu rozwijane, hamburger przycisk na środku - czarny lub biały:
+            - O aplikacji
+            - Pomoc
+            - Prawa autorskie
+- Interfejs prezesa:
+    - Przycisk "Zamów kawę"
+    - Przycisk "Zamów herbatę"
+    - Przycisk duży czerwony "Odrzuć wszystkie podania"
+    - Przycisk "Zobacz aplikacje" - przenoszący do nowego widoku aplikacji, osobne karty pod sobą dla każdego podania, na każdej karcie przycisk:
+        - Zielony: "Umów spotkanie" - ukazujący kalendarz i pozwalający na umówienie spotkania,
+        - Czerwony: "Odrzuć aplikacje".
+- Interfejs pracownika:
+    - Formularz do wypełnienia:
+        - Imię
+        - Nazwisko
+        - Wiek
+        - Adres zamieszkania
+        - Wykształcenie
+        - Pesel
+        - Posiadane prawo jazdy
+        - Preforowany rodzaj transportu
+        - Staż
+        - Max 70 znaków o sobie
+    - Przycisk aplikuj
+    - Widok z komunikatem: "Skontaktujemy się z Tobą niedługo." i przycisk powrót do ekranu głównego.
