@@ -140,3 +140,79 @@ public class Losowania {
         System.out.println("Losowa liczba z przedziału " + min + " do " + max + ": " + randomNum);
     }
 }
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <!-- Miejsce na obrazek -->
+    <ImageView
+android:id="@+id/imageView"
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:layout_centerInParent="true"
+android:src="@drawable/image1" />
+
+    <!-- Przycisk do losowania obrazka -->
+    <Button
+android:id="@+id/randomizeButton"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Losuj obrazek"
+android:layout_below="@id/imageView"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="20dp" />
+
+</RelativeLayout>
+
+package com.example.losowanieobrazkow;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity {
+
+    // Tablica z identyfikatorami zasobów obrazków
+    private int[] imageIds = {
+            R.drawable.image1,
+            R.drawable.image2,
+            R.drawable.image3,
+            R.drawable.image4
+    };
+
+    private ImageView imageView;
+    private Button randomizeButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Inicjalizacja widoków
+        imageView = findViewById(R.id.imageView);
+        randomizeButton = findViewById(R.id.randomizeButton);
+
+        // Obsługa kliknięcia przycisku
+        randomizeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Losowanie indeksu z tablicy imageIds
+                Random random = new Random();
+                int randomIndex = random.nextInt(imageIds.length);
+
+                // Ustawienie losowego obrazka
+                imageView.setImageResource(imageIds[randomIndex]);
+
+                // Opcjonalnie: wyświetlenie komunikatu Toast z informacją o wybranym obrazku
+                Toast.makeText(MainActivity.this, "Obrazek: " + (randomIndex + 1), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
