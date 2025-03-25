@@ -32,6 +32,9 @@ public class Losowania {
         
         System.out.println("\nPrzykład 10: Symulacja rzutu kostką");
         symulacjaRzutuKostka();
+        
+        System.out.println("\nPrzykład 11: Losowanie liczby z przedziału (np. 50-150)");
+        losowanieZPrzedzialu();
     }
     
     // Przykład 1: Losowanie liczby całkowitej z określonego zakresu (np. 1-100)
@@ -126,5 +129,14 @@ public class Losowania {
         Random rand = new Random();
         int dice = rand.nextInt(6) + 1;
         System.out.println("Wynik rzutu kostką: " + dice);
+    }
+    
+    // Przykład 11: Losowanie liczby z przedziału (np. 50-150)
+    public static void losowanieZPrzedzialu() {
+        Random rand = new Random();
+        int min = 50, max = 150;
+        // Losujemy liczbę z przedziału [min, max] włącznie
+        int randomNum = rand.nextInt((max - min) + 1) + min;
+        System.out.println("Losowa liczba z przedziału " + min + " do " + max + ": " + randomNum);
     }
 }
