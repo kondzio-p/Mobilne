@@ -1,0 +1,46 @@
+{
+  "panstwa": [
+    {
+      "kraj": "Polska",
+      "liczba_mieszkancow": 38000000,
+      "powierzchnia": 322575,
+      "flaga": "polska.png"
+    },
+    {
+      "kraj": "Niemcy",
+      "liczba_mieszkancow": 83000000,
+      "powierzchnia": 357022,
+      "flaga": "niemcy.png"
+    },
+    {
+      "kraj": "Francja",
+      "liczba_mieszkancow": 67000000,
+      "powierzchnia": 643801,
+      "flaga": "francja.png"
+    },
+    {
+      "kraj": "Hiszpania",
+      "liczba_mieszkancow": 47000000,
+      "powierzchnia": 505990,
+      "flaga": "hiszpania.png"
+    },
+    {
+      "kraj": "Włochy",
+      "liczba_mieszkancow": 60000000,
+      "powierzchnia": 301340,
+      "flaga": "wlochy.png"
+    },
+    {
+      "kraj": "Wielka Brytania",
+      "liczba_mieszkancow": 67000000,
+      "powierzchnia": 242495,
+      "flaga": "wielkabrytania.png"
+    },
+    {
+      "kraj": "Grecja",
+      "liczba_mieszkancow": 10700000,
+      "powierzchnia": 131990,
+      "flaga": "grecja.png"
+    }
+  ]
+}
