@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="Wybierz klub"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/pucharyKlubu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puchary: "
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/polubienia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polubienia: "
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300px"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+    <Button
+        android:id="@+id/like"
+        android:layout_width="250px"
+        android:layout_height="120px"
+        android:text="Lubię"
+        android:layout_gravity="center_vertical"
+        />
+
+    <Button
+        android:id="@+id/dislike"
+        android:layout_width="300px"
+        android:layout_height="120px"
+        android:text="Nie lubię"
+        android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+FC Barcelona;5;barcelona.png
+Real Madrid;14;realmadrid.png
+Manchester United;3;manutd.png
+Bayern Monachium;6;bayern.png
+Juventus;2;juventus.png
